@@ -6,15 +6,18 @@
     <title>accessing dom with elements</title>
 </head>
 <body>
-    <h1 id="demo">I love bangladesh <span style="display:none">country</span>
-    </h1>
+    <!-- <h1 id="demo">I love bangladesh <span style="display:none">country</span>
+    </h1> -->
 
+    <h2 id="demo">this is our country <span style="display: none;">bangladesh</span></h2>
 
 <script>
-    //access hidden text with textContent
-    let demo=document.getElementById('demo')
-    console.log(demo.textContent)
+    // //access hidden text with textContent
+    // let demo=document.getElementById('demo')
+    // console.log(demo.textContent)
     
+    let demo=document.getElementById('demo')
+    console.log(demo.innerText)
 </script>   
 </body>
 </html>
