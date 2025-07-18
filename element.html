@@ -7,17 +7,23 @@
 </head>
 <body>
     <!-- <h1 id="demo">I love bangladesh <span style="display:none">country</span>
-    </h1> -->
+    </h1>
 
-    <h2 id="demo">this is our country <span style="display: none;">bangladesh</span></h2>
+    <h2 id="demo">this is our country <span style="display: none;">bangladesh</span></h2> -->
+
+    <img id="image" src="https://scontent.fdac142-1.fna.fbcdn.net/v/t39.30808-6/490233129_1222439645963986_2227430181906570970_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFVh1FG80fL3NqP9ZJZioBc5sRsIgy52i_mxGwiDLnaLw1wuN3qYSlhXjFfy5JDjHcdtRtEHvkbW_JVfET4P_CU&_nc_ohc=1fmZ95N3BPEQ7kNvwGH_Bvj&_nc_oc=AdmcUtvlwCNxQRzqQ_qQnytTqHkDD2zLVkw8Iyb5URs7fj-X-uIyEOua1S-Y6WQDp28&_nc_zt=23&_nc_ht=scontent.fdac142-1.fna&_nc_gid=i9quX6F5jvYusxfXo0Hubw&oh=00_AfRHydKz1fQtmvF7LN3GpoMPW-ENTnU86xuEIGgXnslkrA&oe=68805ED7" alt="adnan_png">
 
 <script>
-    // //access hidden text with textContent
+    //access hidden text with textContent
     // let demo=document.getElementById('demo')
     // console.log(demo.textContent)
-    
-    let demo=document.getElementById('demo')
-    console.log(demo.innerText)
+
+    // //innertext:
+    // let demo=document.getElementById('demo')
+    // console.log(demo.innerText)
+ let img_tag=document.getElementById('image')
+ let image_value=img_tag.getAttribute('src')
+ console.log(image_value)
 </script>   
 </body>
 </html>
