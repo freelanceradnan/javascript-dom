@@ -6,20 +6,31 @@
     <title>change css styles with style dom element</title>
 </head>
 <body>
-    <div id="text">This is adnan a web developer</div>
-    <button onclick="changeStyle()">Change style now!</button>
+    <!-- <div id="text">This is adnan a web developer</div>
+    <button onclick="changeStyle()">Change style now!</button> -->
 
+    <div id="text1">I am a student</div>
+<button onclick="changeStyle1()">Change now!</button>
     <script>
-function changeStyle(){
-    let text=document.getElementById('text')
-    text.style.color="red";
-    text.style.fontSize="30px";
-    text.style.textTansform="uppercase";
-    text.style.marginTop="20px";
-    text.style.textAlign="center";
-    text.style.backgroundColor="black";
+// function changeStyle(){
+//     let text=document.getElementById('text')
+//     text.style.color="red";
+//     text.style.fontSize="30px";
+//     text.style.textTransform="uppercase";
+//     text.style.marginTop="20px";
+//     text.style.textAlign="center";
+//     text.style.backgroundColor="black";
+// }
+function changeStyle1(){
+let text1=document.getElementById('text1')
+text1.style.color="red";
+text1.style.textAlign="center";
+text1.style.fontSize="40px";
+text1.style.textTransform="uppercase";
+text1.style.border="dashed";
+text1.style.borderSize="1px";
+text1.style.borderColor="green";
 }
-
     </script>
 </body>
 </html>
