@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adding classlist,toggle,removeclassList,contains</title>
+    <style>
+        #box{
+            height:100px;
+            width:200px;
+            background:pink;
+        }
+        .highlight{
+            color:white;
+            font-weight:bolder;
+            font-size:20px;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleHighlight()">Toggle Highlight</button>
+    <div id="box">this is a box</div>
+
+
+    <script>
+//toggle with classlist
+function toggleHighlight(){
+    let box=document.getElementById('box');
+    box.classList.toggle('highlight');
+}
+
+    </script>
+</body>
+</html>
