@@ -5,16 +5,28 @@
   <title>Simple DOM Element Creator</title>
 </head>
 <body>
-
-  <button onclick="createElement()">Create</button>
-  <div id="container"></div>
+<input type="text" id="inputItem">
+<button onclick="createItem()">add</button>
+<div>
+    <ul id="itemList"></ul>
+</div>
+  <!-- <button onclick="createElement()">Create</button>
+  <div id="container"></div> -->
 
   <script>
-    function createElement() {
-      const para = document.createElement('p'); 
-    para.textContent = 'This is a paragraph.';
-    document.getElementById('container').appendChild(para);
-    }
+function createItem(){
+    const input=document.getElementById('inputItem')
+    const newItem=document.createElement('li')
+    newItem.textContent=input.value
+    document.getElementById('itemList').appendChild(newItem)
+    input.value=""
+}
+
+    // function createElement() {
+    //   const para = document.createElement('p'); 
+    // para.textContent = 'This is a paragraph.';
+    // document.getElementById('container').appendChild(para);
+    // }
   </script>
 
 </body>
