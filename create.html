@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple DOM Element Creator</title>
+</head>
+<body>
+
+  <button onclick="createElement()">Create</button>
+  <div id="container"></div>
+
+  <script>
+    function createElement() {
+      const para = document.createElement('p'); 
+    para.textContent = 'This is a paragraph.';
+    document.getElementById('container').appendChild(para);
+    }
+  </script>
+
+</body>
+</html>
